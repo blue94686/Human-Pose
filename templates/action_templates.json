@@ -1,0 +1,190 @@
+{
+  "八段锦": {
+    "keywords": ["八段锦", "健身气功", "双臂抬起", "舒缓", "定势", "起势", "收势"],
+    "category": "健身气功",
+    "description": "健身气功八段锦要求动作舒缓连贯、呼吸自然、身形中正。标准动作应保持单人正面全身入镜，起势时两脚自然开立，膝部微屈，肩颈放松；双臂上举或外展时左右高度基本一致，肘腕路线圆活，肩部不过度上耸；过渡阶段重心平稳移动，躯干不前冲、不侧歪；关键定势形成后有短暂停留，收势时速度减缓，手臂自然回落，重心回到身体中线。",
+    "tempo": "slow",
+    "requires_symmetry": true,
+    "requires_upright_torso": true,
+    "requires_hold": true,
+    "focus_body_parts": ["arms", "torso", "tempo", "balance"],
+    "phases": [
+      "准备：两脚自然开立，身体正对镜头，肩髋基本水平，重心落在两脚之间。",
+      "起势：双手由身体前侧缓慢上提，腕肘肩依次打开，动作速度均匀。",
+      "过渡：手臂继续上举或外展，躯干保持直立，左右手路线同步。",
+      "定势：关键姿态形成后短暂停留，手腕高度接近，肩部放松不耸肩。",
+      "收势：双臂缓慢回落，重心回中，动作结束时身体稳定不晃动。"
+    ],
+    "common_errors": [
+      "双手抬起高度不一致，形成明显左右高低差。",
+      "抬臂时躯干前冲或侧倾，肩髋连线偏离中线。",
+      "收势过快，关键姿态没有停顿。",
+      "重心偏向单侧，画面左右运动能量差过大。",
+      "拍摄时人物不完整入镜，关键点识别不稳定。"
+    ],
+    "corrections": [
+      "双手上举时看齐手腕高度，保持两肘打开角度接近。",
+      "收紧核心，让鼻尖、胸骨、骨盆中心尽量处在同一垂直线。",
+      "每个定势至少保持短暂停顿，再进入下一段动作。",
+      "动作慢而不断，避免突然加速、抢拍或提前收手。",
+      "固定机位正面拍摄，保证头、手、脚完整进入画面。"
+    ],
+    "thresholds": {
+      "torso_tilt_max_deg": 15.0,
+      "arm_symmetry_error_max": 18.0,
+      "arm_raise_min_deg": 125.0,
+      "left_right_balance_max": 0.18,
+      "motion_mean_max_slow": 2.5,
+      "motion_std_max": 1.8,
+      "joint_jitter_max": 0.055
+    }
+  },
+  "八段锦起势": {
+    "keywords": ["八段锦起势", "起势", "两手托举", "双手上提"],
+    "category": "健身气功",
+    "description": "八段锦起势重点是从静止站姿进入缓慢上提动作。标准姿态为两脚自然开立，膝部微屈，双臂从身体前侧同步上提，手腕路线平稳，手臂上举过程中肩部放松，躯干保持中正，眼平视前方。",
+    "tempo": "slow",
+    "requires_symmetry": true,
+    "requires_upright_torso": true,
+    "requires_hold": true,
+    "focus_body_parts": ["arms", "torso", "balance", "tempo"],
+    "phases": [
+      "准备：双脚开立，膝部微屈，双手自然下垂。",
+      "起势：双手同步从身体前方上提，手腕高度逐步升高。",
+      "定势：手臂到位后略停，肩部保持放松。",
+      "回落：双手缓慢下降，重心保持居中。"
+    ],
+    "common_errors": ["一侧手先动或先到位。", "手臂上提时耸肩。", "身体随手臂上提前倾。", "动作过快，缺少定势停顿。"],
+    "corrections": ["以两侧手腕同时启动和同时到位为标准。", "肩部下沉，手臂上提时不要夹肩。", "保持胸骨和骨盆中心上下对齐。", "上提到位后短暂停留，再进入回落。"],
+    "thresholds": {
+      "torso_tilt_max_deg": 12.0,
+      "arm_symmetry_error_max": 14.0,
+      "arm_raise_min_deg": 115.0,
+      "left_right_balance_max": 0.16,
+      "motion_mean_max_slow": 2.2,
+      "motion_std_max": 1.5,
+      "joint_jitter_max": 0.05
+    }
+  },
+  "抬手动作": {
+    "keywords": ["抬手", "举臂", "双臂上举", "抬臂"],
+    "category": "上肢动作",
+    "description": "抬手动作要求双臂从低位向上或向前抬起，左右手高度和速度接近，肘部不过度外翻或内夹，肩部放松，躯干保持直立。测试时主要检查抬臂高度、左右对称、躯干是否随手臂移动而偏斜，以及动作过程是否平稳。",
+    "tempo": "medium",
+    "requires_symmetry": true,
+    "requires_upright_torso": true,
+    "requires_hold": false,
+    "focus_body_parts": ["arms", "torso"],
+    "phases": ["准备：双臂低位放松，身体稳定。", "抬臂：两侧手腕同步上移，肘肩路线平稳。", "到位：双手高度接近，肩部不过度上耸。", "回落：双臂按原路线平稳下降。"],
+    "common_errors": ["手臂抬高不足。", "左右手腕高度差过大。", "抬臂时躯干偏移。", "肘部路线突然跳变。"],
+    "corrections": ["提高双臂上举高度，使手腕接近目标高度。", "以较低一侧为重点调整，保持两手同步到位。", "抬臂时核心收紧，避免身体跟随手臂偏移。", "降低动作速度，保持肘腕路线连续。"],
+    "thresholds": {
+      "torso_tilt_max_deg": 12.0,
+      "arm_symmetry_error_max": 14.0,
+      "arm_raise_min_deg": 120.0,
+      "left_right_balance_max": 0.16,
+      "motion_std_max": 1.6,
+      "joint_jitter_max": 0.05
+    }
+  },
+  "站姿稳定": {
+    "keywords": ["站姿", "站立", "重心稳定", "身体中正", "定势站立"],
+    "description": "站姿稳定模板用于判断测试者是否保持身体中正和重心平稳。标准姿态为头部位于双肩中间，肩髋基本水平，躯干接近垂直，双脚支撑稳定，画面中人体不持续左右晃动。",
+    "tempo": "slow",
+    "requires_symmetry": true,
+    "requires_upright_torso": true,
+    "requires_hold": true,
+    "focus_body_parts": ["torso", "balance"],
+    "phases": ["准备：双脚稳定支撑，身体居中。", "保持：肩髋水平，躯干直立，重心不明显偏移。", "结束：姿态仍保持稳定，无明显晃动。"],
+    "common_errors": ["身体长期偏向画面一侧。", "躯干侧倾或前倾。", "肩部一高一低。", "站立过程中持续晃动。"],
+    "corrections": ["调整两脚受力，让重心回到两脚之间。", "保持肩髋连线稳定，减少上身摇晃。", "固定镜头并保持全身入镜。", "先稳定站姿，再开始后续动作。"],
+    "thresholds": {
+      "torso_tilt_max_deg": 10.0,
+      "left_right_balance_max": 0.12,
+      "motion_mean_max_slow": 1.5,
+      "motion_std_max": 1.2,
+      "joint_jitter_max": 0.045
+    }
+  },
+  "太极云手": {
+    "keywords": ["太极", "云手", "太极拳", "重心转换", "腰胯带动"],
+    "category": "太极",
+    "description": "太极云手强调立身中正、腰胯带动、手臂路线圆活和重心虚实转换。动作应保持上下一体，手臂不单独乱摆，左右转换时重心先稳后移，躯干不过度前倾或侧歪。",
+    "tempo": "slow",
+    "requires_symmetry": true,
+    "requires_upright_torso": true,
+    "requires_hold": false,
+    "focus_body_parts": ["arms", "torso", "balance", "tempo"],
+    "phases": ["预备：身体中正，两脚支撑稳定。", "转腰：腰胯带动手臂移动。", "换重心：重心平稳从一侧过渡到另一侧。", "合手：两臂路线圆活，动作不断劲。"],
+    "common_errors": ["手臂单独摆动，腰胯没有带动。", "重心转换抢拍，上身先偏。", "躯干前倾或侧歪。", "动作停顿生硬，路线不圆活。"],
+    "corrections": ["先练腰胯转动，再带动手臂。", "换重心时先稳脚下，再移动上身。", "保持头顶上领、肩部放松。", "减慢速度，让动作连续不断。"],
+    "thresholds": {
+      "torso_tilt_max_deg": 13.0,
+      "arm_symmetry_error_max": 20.0,
+      "left_right_balance_max": 0.2,
+      "motion_mean_max_slow": 2.2,
+      "motion_std_max": 1.6,
+      "joint_jitter_max": 0.055
+    }
+  },
+  "武术弓步冲拳": {
+    "keywords": ["武术", "弓步", "冲拳", "基本功", "发力"],
+    "category": "武术基本功",
+    "description": "弓步冲拳要求步型稳定、前后支撑清楚、冲拳路线直接、力点明确。动作可以有较强发力，但定型时躯干不能明显晃动，肩髋方向应与动作发力方向一致。",
+    "tempo": "fast",
+    "requires_symmetry": false,
+    "requires_upright_torso": true,
+    "requires_hold": true,
+    "focus_body_parts": ["arms", "legs", "torso", "balance"],
+    "phases": ["预备：两脚支撑稳定，拳收腰间。", "上步：形成弓步，重心落稳。", "冲拳：拳沿直线发出，肩肘腕方向明确。", "定型：步型和拳位短暂停住。"],
+    "common_errors": ["步型不稳，冲拳时身体晃动。", "拳路偏斜，肘腕不成线。", "躯干塌腰或转体不足。", "发力后没有定型。"],
+    "corrections": ["先定住弓步，再做冲拳。", "拳从腰间直线推出，肘腕保持方向一致。", "发力后短暂停住，检查肩髋和拳路。", "初习者先慢速走路线，再提高速度。"],
+    "thresholds": {
+      "torso_tilt_max_deg": 14.0,
+      "left_right_balance_max": 0.24,
+      "motion_mean_min_fast": 1.0,
+      "motion_std_max": 2.4,
+      "joint_jitter_max": 0.07
+    }
+  },
+  "武术马步": {
+    "keywords": ["马步", "武术基本功", "下盘", "步型"],
+    "category": "武术基本功",
+    "description": "马步重点检查下盘稳定、躯干直立和重心居中。标准姿态为两脚开立，膝部弯曲方向稳定，身体不过度前倾，保持一段时间不明显晃动。",
+    "tempo": "slow",
+    "requires_symmetry": true,
+    "requires_upright_torso": true,
+    "requires_hold": true,
+    "focus_body_parts": ["legs", "torso", "balance"],
+    "phases": ["下蹲：两脚开立，重心下降。", "定型：膝部方向稳定，躯干直立。", "保持：重心不左右漂移。"],
+    "common_errors": ["上身前倾。", "重心左右漂移。", "膝部方向不稳。", "保持时间不足。"],
+    "corrections": ["先降低幅度保证稳定，再逐步加深马步。", "保持头、胸、骨盆上下对齐。", "膝盖方向和脚尖方向尽量一致。", "每次保持稳定后再延长时间。"],
+    "thresholds": {
+      "torso_tilt_max_deg": 12.0,
+      "left_right_balance_max": 0.14,
+      "motion_mean_max_slow": 1.2,
+      "motion_std_max": 1.0,
+      "joint_jitter_max": 0.045
+    }
+  },
+  "民族舞摆臂": {
+    "keywords": ["民族舞", "舞蹈", "摆臂", "节拍", "转身", "韵律"],
+    "category": "民族舞",
+    "description": "民族舞摆臂强调节拍准确、手臂路线清楚、身体韵律和重心控制。动作应跟随音乐节拍完成，摆臂时上身方向稳定，转身或换步时重心不散。",
+    "tempo": "medium",
+    "requires_symmetry": true,
+    "requires_upright_torso": false,
+    "requires_hold": false,
+    "focus_body_parts": ["arms", "torso", "balance", "tempo"],
+    "phases": ["预备：站位稳定，找准节拍。", "摆臂：手臂按路线展开，手腕和手型自然。", "转接：身体韵律连续，重心不过度偏移。", "收束：动作和节拍同时结束。"],
+    "common_errors": ["动作抢拍或拖拍。", "摆臂路线不清楚。", "转身时重心偏移。", "手臂和身体韵律脱节。"],
+    "corrections": ["先按节拍慢速走动作，再加入表现幅度。", "摆臂时明确起点、最高点和收束点。", "转身先稳定轴心，再加手臂动作。", "用身体韵律带动手臂，不要只摆手。"],
+    "thresholds": {
+      "torso_tilt_max_deg": 18.0,
+      "arm_symmetry_error_max": 22.0,
+      "left_right_balance_max": 0.22,
+      "motion_std_max": 2.0,
+      "joint_jitter_max": 0.06
+    }
+  }
+}

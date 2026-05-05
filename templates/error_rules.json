@@ -1,0 +1,62 @@
+{
+  "tempo_too_fast": {
+    "title": "动作节奏偏快",
+    "detail_prefix": "",
+    "suggestion": "放慢关键动作段速度，给动作衔接和定势留出更清晰的缓冲。"
+  },
+  "tempo_too_slow": {
+    "title": "动作力度偏弱",
+    "detail_prefix": "",
+    "suggestion": "适当提高动作发力速度，避免整段动作没有明显的节奏起伏。"
+  },
+  "arm_symmetry": {
+    "title": "双臂轨迹不够对称",
+    "detail_prefix": "",
+    "suggestion": "检查左右手抬起高度、肘部夹角和停顿位置，保证两侧路线一致。"
+  },
+  "arm_raise_low": {
+    "title": "手臂抬高不足",
+    "detail_prefix": "",
+    "suggestion": "提高双臂上举高度，保持肩部打开，先做到两侧同步，再提高幅度。"
+  },
+  "frame_balance": {
+    "title": "左右运动分布不均",
+    "detail_prefix": "",
+    "suggestion": "注意两侧动作是否同步，避免身体和手臂长期偏向同一侧。"
+  },
+  "torso_tilt": {
+    "title": "躯干偏移较大",
+    "detail_prefix": "",
+    "suggestion": "收紧核心，保持肩髋连线稳定，尽量让躯干沿垂直方向展开。"
+  },
+  "unstable_motion": {
+    "title": "动作稳定性不足",
+    "detail_prefix": "",
+    "suggestion": "减少中途抖动和突发加速，让整个动作段更平滑。"
+  },
+  "joint_jitter": {
+    "title": "骨架抖动偏大",
+    "detail_prefix": "",
+    "suggestion": "减小拍摄抖动和遮挡，补充标准视频模板，让动作过渡更稳定。"
+  },
+  "tracking_loss": {
+    "title": "连续识别稳定性一般",
+    "detail_prefix": "",
+    "suggestion": "保持人物居中、单人正面拍摄，减少遮挡和背景干扰。"
+  },
+  "missing_hold": {
+    "title": "定势停顿不明显",
+    "detail_prefix": "",
+    "suggestion": "在关键姿态形成后停留片刻，让动作节奏更完整。"
+  },
+  "phase_sparse": {
+    "title": "动作阶段划分不够清楚",
+    "detail_prefix": "",
+    "suggestion": "重新录制完整动作过程，确保起势、过渡和收势都完整出现。"
+  },
+  "transition_not_smooth": {
+    "title": "动作衔接不够顺畅",
+    "detail_prefix": "",
+    "suggestion": "先把连接段做慢做稳，再逐步提高动作完整度。"
+  }
+}
